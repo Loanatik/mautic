@@ -43,10 +43,6 @@ class Email extends FormEntity implements VariantEntityInterface, TranslationEnt
     use DynamicContentEntityTrait;
 
     /**
-     * custom variable defined by Eric Jen 6/11/2017.
-     */
-
-    /**
      * @var string
      */
     private $ccAddress;
@@ -241,9 +237,6 @@ class Email extends FormEntity implements VariantEntityInterface, TranslationEnt
             ->nullable()
             ->build();
 
-        /**
-         * Modified by Eric J. 6/10/2017.
-         */
         $builder->createField('toAddress', 'string')
             ->columnName('to_address')
             ->nullable()
